@@ -18,7 +18,7 @@ const countLetters = function(string) {
     }
   }
   return results;
-}
+};
 
 // Test Cases
 const test = countLetters("Lh lab9");
