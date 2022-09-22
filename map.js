@@ -24,8 +24,8 @@ const map = function(array, callback) {
   for (let item of array) {
     results.push(callback(item));
   }
-  return results
-}
+  return results;
+};
 
 // Test Case #1
 const words = ["ground", "control", "to", "major", "tom"];
