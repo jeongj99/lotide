@@ -1,4 +1,7 @@
 const middle = function(array) {
+  if (!Array.isArray(array)) {
+    throw new Error('Pass only arrays');
+  }
   if (array.length <= 2) {
     return [];
   }
