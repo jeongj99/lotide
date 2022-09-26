@@ -16,6 +16,6 @@ describe('#eqArrays', () => {
   it('Throw an error if one or both arrays are not arrays', () => {
     const arrayOne = 'hello';
     const arrayTwo = [1, 2, 3];
-    expect(eqArrays, (arrayOne, arrayTwo)).to.throw('Pass only arrays')
+    expect(eqArrays, (arrayOne, arrayTwo)).to.throw('Pass only arrays');
   });
 });
