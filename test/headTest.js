@@ -1,4 +1,5 @@
 const assert = require('chai').assert;
+const { expect } = require('chai');
 const head = require('../head');
 
 describe('#head', () => {
@@ -19,5 +20,8 @@ describe('#head', () => {
   });
   it("return undefined for []", () => {
     assert.strictEqual(head([]), undefined);
+  });
+  it('throw an error if input is not an array', () => {
+    expect(head, 'string').to.throw('Pass only arrays');
   });
 });

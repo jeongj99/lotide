@@ -1,4 +1,5 @@
 const assert = require('chai').assert;
+const { expect } = require('chai');
 const middle = require('../middle');
 
 describe("#middle", () => {
@@ -22,5 +23,8 @@ describe("#middle", () => {
     const inputArray = [1, 2, 3, 4, 5];
     middle(inputArray);
     assert.deepEqual(inputArray, [1, 2, 3, 4, 5]);
+  });
+  it('throw an error if input is not an array', () => {
+    expect(middle, 'string').to.throw('Pass only arrays');
   });
 });
