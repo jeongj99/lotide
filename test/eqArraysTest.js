@@ -8,7 +8,7 @@ describe('#eqArrays', () => {
     const arrayTwo = [1, 2, 3];
     assert.strictEqual(eqArrays(arrayOne, arrayTwo), true);
   });
-  it('Return false if arrays do notmatch', () => {
+  it('Return false if arrays do not match', () => {
     const arrayOne = [1, 2, 3, '4'];
     const arrayTwo = [1, 2, 3];
     assert.strictEqual(eqArrays(arrayOne, arrayTwo), false);
