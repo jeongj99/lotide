@@ -7,7 +7,7 @@ describe('#tail', () => {
     const array = ['Hello', 'Lighthouse', 'Labs'];
     assert.deepEqual(tail(array), ['Lighthouse', 'Labs']);
   });
-  it("returns undefined for []", () => {
+  it("returns [] for []", () => {
     const array = [];
     assert.deepEqual(tail(array), []);
   });
