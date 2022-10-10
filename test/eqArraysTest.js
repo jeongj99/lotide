@@ -13,6 +13,21 @@ describe('#eqArrays', () => {
     const arrayTwo = [1, 2, 3];
     assert.strictEqual(eqArrays(arrayOne, arrayTwo), false);
   });
+  it('Return true if both arrays match including the subarrays', () => {
+    const arrayOne = [[2, 3], [4]];
+    const arrayTwo = [[2, 3], [4]];
+    assert.strictEqual(eqArrays(arrayOne, arrayTwo), true);
+  });
+  it('Return false if arrays do not match (subarray)', () => {
+    const arrayOne = [[2, 3], [4]];
+    const arrayTwo = [[2, 3], [4, 5]];
+    assert.strictEqual(eqArrays(arrayOne, arrayTwo), false);
+  });
+  it('Return false if arrays do not match (subarray)', () => {
+    const arrayOne = [[2, 3], [4]];
+    const arrayTwo = [[2, 3], 4];
+    assert.strictEqual(eqArrays(arrayOne, arrayTwo), false);
+  });
   it('Throw an error if one or both arrays are not arrays', () => {
     const arrayOne = 'hello';
     const arrayTwo = [1, 2, 3];
